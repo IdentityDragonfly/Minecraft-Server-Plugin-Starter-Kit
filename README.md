@@ -6,6 +6,10 @@ Modern Minecraft Paper/Spigot plugin starter kit with commands, permissions, con
 </p>
 
 <p align="center">
+  <img src="assets/banner.png" alt="Minecraft Server Plugin Starter Kit Banner" width="100%" />
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Minecraft-Paper%20%7C%20Spigot-brightgreen" alt="Minecraft Paper Spigot" />
   <img src="https://img.shields.io/badge/Java-17%2B-orange" alt="Java 17+" />
   <img src="https://img.shields.io/badge/Gradle-Kotlin%20DSL-blue" alt="Gradle Kotlin DSL" />

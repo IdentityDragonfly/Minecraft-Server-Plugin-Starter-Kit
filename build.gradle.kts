@@ -1,0 +1,39 @@
+plugins {
+    java
+}
+
+group = "io.github.example"
+version = "1.0.0"
+
+repositories {
+    mavenCentral()
+    maven {
+        name = "papermc"
+        url = uri("https://repo.papermc.io/repository/maven-public/")
+    }
+}
+
+dependencies {
+    // Latest Paper API versioning format for Minecraft/Paper 26.1.x.
+    compileOnly("io.papermc.paper:paper-api:26.1.2.build.+")
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(25))
+}
+
+tasks.withType<JavaCompile>().configureEach {
+    options.encoding = "UTF-8"
+    options.release.set(25)
+}
+
+tasks.processResources {
+    val props = mapOf(
+        "version" to project.version
+    )
+    inputs.properties(props)
+    filteringCharset = "UTF-8"
+    filesMatching("plugin.yml") {
+        expand(props)
+    }
+}

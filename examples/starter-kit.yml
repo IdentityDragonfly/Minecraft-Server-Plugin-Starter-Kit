@@ -1,0 +1,20 @@
+starter-kit:
+  enabled: true
+  cooldown-seconds: 3600
+  items:
+    - material: STONE_SWORD
+      amount: 1
+      name: "&aStarter Sword"
+      lore:
+        - "&7Your first weapon."
+    - material: STONE_PICKAXE
+      amount: 1
+      name: "&bStarter Pickaxe"
+      lore:
+        - "&7Start mining right away."
+    - material: BREAD
+      amount: 16
+      name: "&fBread"
+    - material: TORCH
+      amount: 32
+      name: "&eTorches"

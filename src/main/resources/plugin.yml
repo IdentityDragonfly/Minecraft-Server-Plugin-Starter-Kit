@@ -1,0 +1,33 @@
+name: StarterPlugin
+version: '${version}'
+main: io.github.example.starterplugin.StarterPlugin
+description: A modern Minecraft Paper server plugin starter kit with commands, GUI, config and starter kits.
+author: YourName
+website: https://github.com/your-username/minecraft-server-plugin-starter-kit
+api-version: '26.1.2'
+prefix: StarterPlugin
+
+commands:
+  starter:
+    description: Main command for StarterPlugin
+    usage: /starter [help|kit|menu|reload]
+    aliases: [starterkit, skit]
+    permission: starter.use
+
+permissions:
+  starter.use:
+    description: Allows players to use basic starter commands.
+    default: true
+  starter.kit:
+    description: Allows players to receive the starter kit.
+    default: true
+  starter.menu:
+    description: Allows players to open the starter GUI menu.
+    default: true
+  starter.admin:
+    description: Allows admins to reload and manage the plugin.
+    default: op
+    children:
+      starter.use: true
+      starter.kit: true
+      starter.menu: true

@@ -1,0 +1,6 @@
+# Example config idea for a server rules GUI module.
+rules:
+  - "&aBe respectful to other players."
+  - "&aNo griefing or stealing."
+  - "&aNo cheating, hacked clients or exploits."
+  - "&aKeep chat clean and friendly."

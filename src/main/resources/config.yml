@@ -1,0 +1,39 @@
+prefix: "&8[&aStarterPlugin&8]&r"
+
+messages:
+  no-permission: "&cYou do not have permission to use this command."
+  player-only: "&cOnly players can use this command."
+  reload-success: "&aConfiguration reloaded successfully."
+  unknown-command: "&cUnknown subcommand. Use &f/starter help&c."
+  kit-received: "&aYou received your starter kit!"
+  kit-disabled: "&cStarter kits are currently disabled."
+  kit-cooldown: "&cYou must wait &f{time}&c before using this kit again."
+  inventory-full: "&eYour inventory was full, so some items were dropped at your feet."
+  welcome: "&aWelcome to the server, &f{player}&a! Use &f/starter menu&a to begin."
+
+gui:
+  title: "&aStarter Menu"
+  size: 27
+  filler-material: "GRAY_STAINED_GLASS_PANE"
+  kit-slot: 11
+  close-slot: 15
+
+starter-kit:
+  enabled: true
+  cooldown-seconds: 3600
+  items:
+    - material: STONE_SWORD
+      amount: 1
+      name: "&aStarter Sword"
+      lore:
+        - "&7A simple sword for your first adventure."
+    - material: BREAD
+      amount: 16
+      name: "&fBread"
+      lore:
+        - "&7Stay fed while exploring."
+    - material: TORCH
+      amount: 32
+      name: "&eTorches"
+      lore:
+        - "&7Light up caves and your base."

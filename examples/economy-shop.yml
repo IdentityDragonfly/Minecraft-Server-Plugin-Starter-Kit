@@ -1,0 +1,16 @@
+# Example config idea for a future economy shop module.
+shop:
+  enabled: true
+  currency-symbol: "$"
+  categories:
+    blocks:
+      display-name: "&aBlocks"
+      items:
+        stone:
+          material: STONE
+          buy-price: 10
+          sell-price: 2
+        oak_log:
+          material: OAK_LOG
+          buy-price: 25
+          sell-price: 5
